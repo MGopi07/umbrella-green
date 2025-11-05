@@ -20,7 +20,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website (Logo Black) */
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website (Your original muted dark blue) */
-  --accent-color: #39B54A; /* PRIMARY ACCENT: The vibrant Logo Green */
+  --accent-color: #39b54a; /* PRIMARY ACCENT: The vibrant Logo Green */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #212529; /* The default color of the main navmenu links */
-  --nav-hover-color: #39B54A; /* NAV HOVER: Links turn Logo Green on hover */
+  --nav-hover-color: #39b54a; /* NAV HOVER: Links turn Logo Green on hover */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #39B54A; /* DROPDOWN HOVER: Links turn Logo Green on hover */
+  --nav-dropdown-hover-color: #39b54a; /* DROPDOWN HOVER: Links turn Logo Green on hover */
 }
 
 /* --- */
@@ -47,7 +47,7 @@
 }
 
 .dark-background {
-  --background-color: #39B54A; /* DARK SECTION: Uses the vibrant Logo Green */
+  --background-color: #39b54a; /* DARK SECTION: Uses the vibrant Logo Green */
   --default-color: #ffffff; /* White text on the green background */
   --heading-color: #ffffff; /* White headings on the green background */
   --surface-color: #212529; /* Surface elements (cards) use the Logo Black for maximum contrast */
@@ -498,9 +498,9 @@ h6 {
 .footer .footer-about .logo img {
   /* max-height: 40px;
   margin-right: 6px; */
-      /* max-height: 36px; */
-    max-height: 70px;
-    /* margin-right: 8px; */
+  /* max-height: 36px; */
+  max-height: 70px;
+  /* margin-right: 8px; */
 }
 
 .footer .footer-about .logo span {
@@ -767,7 +767,8 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -1305,9 +1306,8 @@ section,
   padding: 40px 30px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
-
 }
-.features-cards .feature-box:hover{
+.features-cards .feature-box:hover {
   transform: translateY(-10px);
 }
 .features-cards .feature-box i {
@@ -2369,13 +2369,75 @@ section,
 # Section Section
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  .header .logo img{
+  .header .logo img {
     max-height: 50px;
   }
-  .mobile-nav-active .navmenu{
+  .mobile-nav-active .navmenu {
     height: 500px;
   }
-  .hero{
+  .hero {
     padding-top: 100px;
   }
 }
+/*------------*/
+/* 
+.features-products-thumb {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.features-products-thumb::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/about/features_product_dots.png);
+  width: 500px !important;
+  height: 500px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: 0; 
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  .features-products-thumb::before {
+    width: 550px;
+    height: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .features-products-thumb::before {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .features-products-thumb::before {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.features-products-thumb .main-img {
+  display: inline-block;
+  position: relative;
+}
+.features-products-thumb .main-img::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+  width: 230px;
+  height: 46px;
+  background: #464646;
+  filter: blur(30px);
+  border-radius: 99px;
+  z-index: -1;
+  opacity: 0.5;
+} */
